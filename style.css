@@ -11,6 +11,12 @@ body {
     background-color: #b85039;
 }
 
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 25px 0;
+}
+
 .plato {
     position: relative;
     display: flex;
@@ -19,7 +25,6 @@ body {
     gap: 5px;
     width: calc(600px - 100px * 1);
     height: calc(600px - 100px * 1);
-    margin-top: 50px;
     background-color: #e8e8e8;
     border: #eee calc(60px - 10px * 1) solid;
     outline: #ddd 2px solid;
@@ -79,14 +84,5 @@ button:active {
 }
 
 @media (max-width: 768px) {
-    .plato {
-        width: calc(600px - 100px * 2);
-        height: calc(600px - 100px * 2);
-    }
-    
-    .comidas1,
-    .comidas2 {
-        width: calc(200px - 20px * 3);
-        height: calc(200px - 20px * 3);
-    }
+
 }
