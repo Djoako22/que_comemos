@@ -4,13 +4,13 @@ const comidas1 = document.querySelector(".comidas1");
 const comidas2 = document.querySelector(".comidas2");
 
 const comidas = [
-    ["MILA", "POLLO", "COSTELETA", "HAMBURGUEZA"],
+    ["MILA", "POLLO", "COSTELETA", "HAMBURGUEZA", "PESCADO"],
     ["ENZALADA", "PURE", "ARROZ", "FIDEOS", "PAPAS"],
     [
         "PIZZA",
         "HAMBURGUEZA",
         "FIDEOS",
-        "RABIOLEZ",
+        "RAVIOLES",
         "SOPA",
         "SANDWICH",
         "PICADA",
@@ -35,10 +35,10 @@ function render() {
 
 btn.addEventListener("click", () => {
     if (btn.innerHTML == "Comenzar") {
-        btn.innerHTML = "Parar";
+        btn.innerHTML = "Detener";
         render();
     } else {
-        btn.innerHTML = "Comenzar";
         clearInterval(t);
+        btn.innerHTML = "Comenzar";
     }
 });
