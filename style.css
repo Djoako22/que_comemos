@@ -29,22 +29,16 @@ h1 {
     border: #eee calc(60px - 10px * 1) solid;
     outline: #ddd 2px solid;
     border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
 }
 
 .comidas1,
 .comidas2 {
+    display: grid;
+    place-items: center;
     width: calc(200px - 20px * 1);
     height: calc(200px - 20px * 1);
     background-color: #fff;
     border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
     overflow: hidden;
 }
 
@@ -81,8 +75,4 @@ button:active {
     background-color: moccasin;
     width: 250px;
     margin: 20px;
-}
-
-@media (max-width: 768px) {
-
 }

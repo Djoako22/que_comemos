@@ -3,27 +3,33 @@ const btn = document.querySelector("button");
 const comidas1 = document.querySelector(".comidas1");
 const comidas2 = document.querySelector(".comidas2");
 
-const a_comidas1 = ["MILA", "POLLO", "COSTELETA", "HAMBURGUEZA"];
-const a_comidas2 = ["ENZALADA", "PURE", "ARROZ", "FIDEOS"];
+const comidas = [
+    ["MILA", "POLLO", "COSTELETA", "HAMBURGUEZA"],
+    ["ENZALADA", "PURE", "ARROZ", "FIDEOS", "PAPAS"],
+    [
+        "PIZZA",
+        "HAMBURGUEZA",
+        "FIDEOS",
+        "RABIOLEZ",
+        "SOPA",
+        "SANDWICH",
+        "PICADA",
+    ],
+];
 
 let t;
 
 function render() {
-    let T = a_comidas1.length;
     comidas1.innerHTML = comidas2.innerHTML = "";
-    let I1 = Math.floor(Math.random() * (T-1));
-    let I2 = Math.floor(Math.random() * (T-1));
     t = setInterval(() => {
-        if (I1 == T) {
-            I1 = 0;
+        if (Math.floor(Math.random()*2)) {
+            comidas1.innerHTML = comidas[0][Math.floor(Math.random() * 4)];
+            comidas2.innerHTML = comidas[1][Math.floor(Math.random() * 5)];
         }
-        if (I2 == T) {
-            I2 = 0;
+        else {
+            comidas1.innerHTML = comidas[2][Math.floor(Math.random() * 7)];
+            comidas2.innerHTML = "-";
         }
-        comidas1.innerHTML = `<div class="c1">${a_comidas1[I1]}</div>`;
-        comidas2.innerHTML = `<div class="c2">${a_comidas2[I2]}</div>`;
-        I1++;
-        I2++;
     }, 100);
 }
 
