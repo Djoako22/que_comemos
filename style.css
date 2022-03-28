@@ -14,9 +14,10 @@ body {
 
 h1 {
     color: #fff;
-    font-size: 8vw;
+    font-size: 3em;
     margin: 25px 0;
     font-weight: 200;
+    text-align: center;
 }
 
 .plato {
@@ -38,7 +39,7 @@ h1 {
 .comidas2 {
     display: grid;
     place-items: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     overflow: hidden;
 }
 
